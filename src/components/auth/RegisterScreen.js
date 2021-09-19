@@ -38,7 +38,7 @@ export const RegisterScreen = () => {
             dispatch( setError('Email invalido') );
             return false;
         } else if ( password !== password2 || password.length < 5 ) {
-            dispatch( setError('El password es invalido o no coincide') );
+            dispatch( setError('El password no coincide') );
             return false;
         }
 
